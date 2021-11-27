@@ -168,8 +168,11 @@
             function colorizeBorder(age, element) {
                 // FIXME BELOW
                 if (age <= 18) {
+                    element.style.borderColor = "green";
                 } else if (age > 25) {
+                    element.style.borderColor = "red";
                 } else {
+                    element.style.borderColor = "#ccc";
                 }
                 // FIXME ABOVE
             }
