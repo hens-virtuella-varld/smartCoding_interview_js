@@ -136,7 +136,15 @@
              * For example, a name like "jane doe", a titleized version of that name will become "Jane Doe"
              */
             function titleizeName(name) {
-                // FIXME
+                // FIXME BELOW
+                // Ref: https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
+                return name.replace(/\w\S*/g, function (txt) {
+                    return (
+                        txt.charAt(0).toUpperCase() +
+                        txt.substr(1).toLowerCase()
+                    );
+                });
+                // FIXME ABOVE
                 return name;
             }
 
