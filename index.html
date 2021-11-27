@@ -153,8 +153,10 @@
              *
              */
             function calculateAge(date) {
-                // FIXME
-                return 18;
+                // FIXME BELOW
+                const Bdate = new Date(date);
+                return ~~((Date.now() - Bdate) / 31557600000);
+                // FIXME ABOVE
             }
 
             /**
