@@ -154,6 +154,8 @@
              */
             function calculateAge(date) {
                 // FIXME BELOW
+                // Ref: http://www.java2s.com/Tutorials/Javascript/Javascript_Form_How_to/Date_Input/Get_the_age_from_input_type_date_.htm
+                // Ref: https://stackoverflow.com/questions/39647353/whats-does-mean-in-javascript#:~:text=It's%20a%20way%20of%20forcing,%E2%80%93%20Pointy
                 const Bdate = new Date(date);
                 return ~~((Date.now() - Bdate) / 31557600000);
                 // FIXME ABOVE
@@ -164,11 +166,12 @@
         This function takes in 2 inputs (arguments), an integer - age, and a DOM element which you can manipulate by changing color of the border.
         */
             function colorizeBorder(age, element) {
-                // FIXME
+                // FIXME BELOW
                 if (age <= 18) {
                 } else if (age > 25) {
                 } else {
                 }
+                // FIXME ABOVE
             }
 
             (function () {
